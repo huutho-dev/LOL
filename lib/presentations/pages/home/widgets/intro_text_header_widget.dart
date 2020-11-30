@@ -12,7 +12,7 @@ class IntroTextHeaderWidget extends StatelessWidget {
         ),
         Text(
           Strings.choose_your_champion,
-          style: Theme.of(context).textTheme.headline2.copyWith(
+          style: Theme.of(context).textTheme.headline3.copyWith(
               color: Colors.black87,
               fontWeight: FontWeight.w700,
               fontFamily: 'Beaufort'),

@@ -46,7 +46,8 @@ class _LOLVideoPlayerState extends State<LOLVideoPlayer> {
             future: _initializedPlayerController,
             builder: (context, snapshot) {
               if (snapshot.connectionState == ConnectionState.done) {
-                return VideoPlayer(_controller);
+                // return VideoPlayer(_controller);
+                return  VideoPlayer(_controller,);
               }
 
               return Center(child: CircularProgressIndicator());

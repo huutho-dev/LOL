@@ -9,7 +9,7 @@ class IntroVideoWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        LOLVideoPlayer(videoUrl: ""), //TODO
+        LOLVideoPlayer(videoUrl: introViewUrl),
         Positioned.fill(
             bottom: 12,
             right: 12,

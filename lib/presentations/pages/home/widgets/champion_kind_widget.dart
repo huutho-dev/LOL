@@ -17,7 +17,7 @@ class ChampionKindWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.transparent,
-      height: 100,
+      height: 90,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
@@ -41,8 +41,8 @@ class ChampionKindWidget extends StatelessWidget {
                     alignment: Alignment.center,
                     children: [
                       Container(
-                        width: 42,
-                        height: 42,
+                        width: 52,
+                        height: 52,
                         child: Align(
                           alignment: Alignment.center,
                           child: SvgPicture.asset(
@@ -50,8 +50,8 @@ class ChampionKindWidget extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        width: 16,
-                        height: 16,
+                        width: 22,
+                        height: 22,
                         child: Align(
                           alignment: Alignment.center,
                           child: SvgPicture.asset(
@@ -80,9 +80,9 @@ class ChampionKindWidget extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .button
-              .copyWith(color: Color.fromARGB(255, 182, 134, 55)));
+              .copyWith(color: Color.fromARGB(255, 182, 134, 55)).copyWith(fontSize: 11));
     }
     return Text(name,
-        style: Theme.of(context).textTheme.caption.copyWith(fontSize: 11));
+        style: Theme.of(context).textTheme.button.copyWith(fontSize: 11));
   }
 }
